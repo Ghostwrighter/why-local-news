@@ -368,7 +368,10 @@ const API = '/.netlify/functions/blob';
 async function loadLiveContent() {
   try {
     // Load signings
-    const signings = await fetch(`${API}?key=signings`).then(r => r.json()).catch(()=>[]);
+    const rawData = await fetch(`${API}?key=signings`).then(r => r.json()).catch(e => { console.error('Fetch error:', e); return null; });
+    console.log('Signings raw data:', JSON.stringify(rawData));
+    const signings = Array.isArray(rawData) ? rawData : (rawData && Array.isArray(rawData.signings) ? rawData.signings : []);
+    console.log('Signings array:', signings.length, 'items');
     const list = document.getElementById('sign-list');
     if (list && Array.isArray(signings) && signings.length) {
       list.innerHTML = signings.map(s => {
