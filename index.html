@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)file:///C:/Users/thame/Downloads/index_1.html -->
+<!-- saved from url=(0045)file:///C:/Users/thame/Downloads/index_2.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,12 +131,12 @@ footer a { color: #d4aa4a; }
 <nav>
   <span class="nav-logo">— Why Local News —</span>
   <ul class="nav-links">
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#about">About</a></li>
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#excerpts">Excerpts</a></li>
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#signings">Signings</a></li>
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#ask">Ask Rick</a></li>
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#purchase">Buy</a></li>
-    <li><a href="file:///C:/Users/thame/Downloads/index_1.html#forum">Forum</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#about">About</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#excerpts">Excerpts</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#signings">Signings</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#ask">Ask Rick</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#purchase">Buy</a></li>
+    <li><a href="file:///C:/Users/thame/Downloads/index_2.html#forum">Forum</a></li>
   </ul>
 </nav>
 
@@ -148,7 +148,7 @@ footer a { color: #d4aa4a; }
     <p class="hero-sub">A Memoir and Plea to Help Rescue an Endangered Form of Journalism</p>
     <div class="hero-rule"></div>
     <p class="hero-desc">From the former Executive Editor of The Charlotte Observer — a passionate, urgent call to save the journalism that holds our communities together.</p>
-    <a href="file:///C:/Users/thame/Downloads/index_1.html#about" class="btn-dark">Discover the Book</a>
+    <a href="file:///C:/Users/thame/Downloads/index_2.html#about" class="btn-dark">Discover the Book</a>
   </div>
 </div>
 
@@ -277,7 +277,7 @@ footer a { color: #d4aa4a; }
     <div class="purchase-btns">
       <a class="btn-amazon" href="https://www.amazon.com/s?k=Why+Local+News+Rick+Thames" target="_blank">📦 &nbsp; Buy on Amazon</a>
       <a class="btn-bn" href="https://www.barnesandnoble.com/w/why-local-news-rick-thames/1148285737" target="_blank">📚 &nbsp; Barnes &amp; Noble</a>
-      <a class="btn-reader" href="file:///C:/Users/thame/Downloads/index_1.html#forum">📖 &nbsp; Already Read It? Join the Discussion</a>
+      <a class="btn-reader" href="file:///C:/Users/thame/Downloads/index_2.html#forum">📖 &nbsp; Already Read It? Join the Discussion</a>
     </div>
   </div>
 </section>
@@ -357,11 +357,11 @@ footer a { color: #d4aa4a; }
 <footer>
   <p style="margin-bottom:8px;">✦ &nbsp; Why Local News &nbsp; ✦</p>
   <p>© 2026 Rick Thames · Published by McFarland Books</p>
-  <p style="margin-top:8px;font-size:11px;opacity:0.6;">Questions? Email <a href="file:///C:/cdn-cgi/l/email-protection#d0a2b9b3bb90a2b9b3bba4b8b1bdb5a3feb3bfbd"><span class="__cf_email__" data-cfemail="36445f555d76445f555d425e575b53451855595b">[email&nbsp;protected]</span></a></p>
-  <p style="margin-top:16px;"><a href="file:///C:/Users/thame/Downloads/admin.html" style="font-size:10px;opacity:0.35;letter-spacing:0.15em;text-transform:uppercase;color:#c9b98a;text-decoration:none;">Site Admin</a></p>
+  <p style="margin-top:8px;font-size:11px;opacity:0.6;">Questions? Email <a href="mailto:rick@rickthames.com" style="color:#c9b98a;">rick@rickthames.com</a></p>
+  <p style="margin-top:16px;"><a href="file:///C:/Users/thame/Downloads/admin.html" style="font-size:11px;opacity:0.5;letter-spacing:0.15em;text-transform:uppercase;color:#c9b98a;text-decoration:none;display:inline-block;padding:8px 16px;">Site Admin</a></p>
 </footer>
 
-<script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ─── LOAD LIVE CONTENT FROM BLOBS ─────────────── */
 const API = '/.netlify/functions/blob';
 
@@ -379,7 +379,7 @@ async function loadLiveContent() {
         return `<li class="signing-item">
           <div><div class="sign-date">${month} ${day}</div><div class="sign-year">${year}</div></div>
           <div><div class="sign-venue">${s.venue}</div><div class="sign-loc">${s.city}</div></div>
-          ${s.time ? `<div class="sign-time">${s.time}</div>` : ''}
+          ${s.time ? `<div class="sign-time">${s.time}</div>` : '<div></div>'}
         </li>`;
       }).join('');
     }
