@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- saved from url=(0045)file:///C:/Users/thame/Downloads/admin_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin — Why Local News</title>
 <style>
   :root {
@@ -272,7 +272,7 @@
     <p class="sub">Site Administration</p>
     <div class="field">
       <label>Password</label>
-      <input type="password" id="pw-input" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')doLogin()" />
+      <input type="password" id="pw-input" placeholder="Enter admin password" onkeydown="if(event.key===&#39;Enter&#39;)doLogin()">
     </div>
     <button class="login-btn" onclick="doLogin()">Sign In</button>
     <p class="login-error" id="login-error">Incorrect password. Please try again.</p>
@@ -294,39 +294,39 @@
     </div>
     <nav>
       <div class="nav-section">Dashboard</div>
-      <div class="nav-item active" onclick="switchPanel('dashboard')">
+      <div class="nav-item active" onclick="switchPanel(&#39;dashboard&#39;)">
         <span class="icon">📊</span> Overview
       </div>
 
       <div class="nav-section">Content</div>
-      <div class="nav-item" onclick="switchPanel('signings')">
+      <div class="nav-item" onclick="switchPanel(&#39;signings&#39;)">
         <span class="icon">📅</span> Book Signings
       </div>
-      <div class="nav-item" onclick="switchPanel('excerpts')">
+      <div class="nav-item" onclick="switchPanel(&#39;excerpts&#39;)">
         <span class="icon">📖</span> Excerpts
       </div>
-      <div class="nav-item" onclick="switchPanel('topics')">
+      <div class="nav-item" onclick="switchPanel(&#39;topics&#39;)">
         <span class="icon">💬</span> Forum Topics
       </div>
 
       <div class="nav-section">Community</div>
-      <div class="nav-item" onclick="switchPanel('moderation')">
+      <div class="nav-item" onclick="switchPanel(&#39;moderation&#39;)">
         <span class="icon">🛡️</span> Moderation
       </div>
-      <div class="nav-item" onclick="switchPanel('questions')">
+      <div class="nav-item" onclick="switchPanel(&#39;questions&#39;)">
         <span class="icon">✉️</span> Reader Questions
       </div>
 
       <div class="nav-section">Site</div>
-      <div class="nav-item" onclick="switchPanel('settings')">
+      <div class="nav-item" onclick="switchPanel(&#39;settings&#39;)">
         <span class="icon">⚙️</span> Settings
       </div>
     </nav>
     <div class="sidebar-footer">
       Signed in as <strong style="color:var(--sidebar-text)">Rick Thames</strong><br>
-      <a href="index.html" target="_blank">← View live site</a>
+      <a href="file:///C:/Users/thame/Downloads/index.html" target="_blank">← View live site</a>
       &nbsp;·&nbsp;
-      <a href="#" onclick="doLogout()">Sign out</a>
+      <a href="file:///C:/Users/thame/Downloads/admin_1.html#" onclick="doLogout()">Sign out</a>
     </div>
   </aside>
 
@@ -334,7 +334,7 @@
   <div class="main">
     <div class="preview-banner">
       <span>⚡ Changes save to your browser — export to update the live site</span>
-      <a href="index.html" target="_blank">View Live Site →</a>
+      <a href="file:///C:/Users/thame/Downloads/index.html" target="_blank">View Live Site →</a>
     </div>
 
     <div class="topbar">
@@ -344,7 +344,7 @@
       </div>
       <div class="topbar-actions">
         <button class="btn btn-outline btn-sm" onclick="exportData()">⬇ Export Data</button>
-        <button class="btn btn-primary btn-sm" onclick="showToast('All changes saved!')">💾 Save All</button>
+        <button class="btn btn-primary btn-sm" onclick="showToast(&#39;All changes saved!&#39;)">💾 Save All</button>
       </div>
     </div>
 
@@ -358,15 +358,15 @@
             <div class="stat-label">Signing Dates</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num" id="stat-posts">12</div>
+            <div class="stat-num" id="stat-posts">0</div>
             <div class="stat-label">Forum Posts</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num" id="stat-questions">3</div>
+            <div class="stat-num" id="stat-questions">0</div>
             <div class="stat-label">Reader Questions</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num" id="stat-flagged">2</div>
+            <div class="stat-num" id="stat-flagged">0</div>
             <div class="stat-label">Needs Review</div>
           </div>
         </div>
@@ -375,32 +375,19 @@
           <div class="card-header">
             <div>
               <div class="card-title">Welcome back, Rick</div>
-              <div class="card-desc">Here's what needs your attention today</div>
+              <div class="card-desc">Your site is live — use the panels on the left to manage content</div>
             </div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-            <div style="padding:16px;background:var(--cream);border:1px solid var(--border);">
-              <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">⚠ Needs Review</div>
-              <p style="font-size:13px;color:var(--muted);">2 forum posts have been flagged by readers. Visit <strong>Moderation</strong> to review.</p>
-              <button class="btn btn-outline btn-sm" style="margin-top:12px;" onclick="switchPanel('moderation')">Go to Moderation →</button>
-            </div>
-            <div style="padding:16px;background:var(--cream);border:1px solid var(--border);">
-              <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">✉ New Questions</div>
-              <p style="font-size:13px;color:var(--muted);">3 reader questions are waiting. Choose which to feature on the site.</p>
-              <button class="btn btn-outline btn-sm" style="margin-top:12px;" onclick="switchPanel('questions')">Review Questions →</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Quick Links</div>
+          <div style="padding:16px;background:var(--cream);border:1px solid var(--border);margin-bottom:16px;">
+            <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">🔗 Connection Status</div>
+            <p style="font-size:13px;color:var(--muted);margin-bottom:12px;" id="blob-status">Checking connection to live site...</p>
+            <button class="btn btn-outline btn-sm" onclick="testBlobConnection()">Test Live Connection</button>
           </div>
           <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <button class="btn btn-outline" onclick="switchPanel('signings')">📅 Add Signing Date</button>
-            <button class="btn btn-outline" onclick="switchPanel('excerpts')">📖 Update Excerpts</button>
-            <button class="btn btn-outline" onclick="switchPanel('topics')">💬 Manage Topics</button>
-            <a class="btn btn-outline" href="index.html" target="_blank">🌐 View Live Site</a>
+            <button class="btn btn-outline" onclick="switchPanel(&#39;signings&#39;)">📅 Add Signing Date</button>
+            <button class="btn btn-outline" onclick="switchPanel(&#39;excerpts&#39;)">📖 Update Excerpts</button>
+            <button class="btn btn-outline" onclick="switchPanel(&#39;topics&#39;)">💬 Manage Topics</button>
+            <a class="btn btn-outline" href="file:///C:/Users/thame/Downloads/index.html" target="_blank">🌐 View Live Site</a>
           </div>
         </div>
       </div>
@@ -417,25 +404,25 @@
           <div class="field-row">
             <div class="field">
               <label>Event Date</label>
-              <input type="date" id="sign-date" />
+              <input type="date" id="sign-date">
             </div>
             <div class="field">
               <label>Time</label>
-              <input type="text" id="sign-time" placeholder="e.g. 2:00 PM – 4:00 PM" />
+              <input type="text" id="sign-time" placeholder="e.g. 2:00 PM – 4:00 PM">
             </div>
           </div>
           <div class="field">
             <label>Venue / Bookstore Name</label>
-            <input type="text" id="sign-venue" placeholder="e.g. Park Road Books" />
+            <input type="text" id="sign-venue" placeholder="e.g. Park Road Books">
           </div>
           <div class="field-row">
             <div class="field">
               <label>City, State</label>
-              <input type="text" id="sign-city" placeholder="e.g. Charlotte, NC" />
+              <input type="text" id="sign-city" placeholder="e.g. Charlotte, NC">
             </div>
             <div class="field">
               <label>Event URL (optional)</label>
-              <input type="text" id="sign-url" placeholder="https://..." />
+              <input type="text" id="sign-url" placeholder="https://...">
             </div>
           </div>
           <div class="field">
@@ -472,7 +459,7 @@
             <div class="slot-label">Tab 1 — "The Mission"</div>
             <div class="field">
               <label>Tab Label</label>
-              <input type="text" id="ex-tab1-label" value="The Mission" />
+              <input type="text" id="ex-tab1-label" value="The Mission">
             </div>
             <div class="field">
               <label>Excerpt Text</label>
@@ -480,7 +467,7 @@
             </div>
             <div class="field">
               <label>Page Citation</label>
-              <input type="text" id="ex-tab1-page" placeholder="e.g. Page 12" />
+              <input type="text" id="ex-tab1-page" placeholder="e.g. Page 12">
             </div>
           </div>
 
@@ -488,7 +475,7 @@
             <div class="slot-label">Tab 2 — "From the Field"</div>
             <div class="field">
               <label>Tab Label</label>
-              <input type="text" id="ex-tab2-label" value="From the Field" />
+              <input type="text" id="ex-tab2-label" value="From the Field">
             </div>
             <div class="field">
               <label>Excerpt Text</label>
@@ -496,7 +483,7 @@
             </div>
             <div class="field">
               <label>Page Citation</label>
-              <input type="text" id="ex-tab2-page" placeholder="e.g. Page 47" />
+              <input type="text" id="ex-tab2-page" placeholder="e.g. Page 47">
             </div>
           </div>
 
@@ -504,7 +491,7 @@
             <div class="slot-label">Tab 3 — "A Reason for Hope"</div>
             <div class="field">
               <label>Tab Label</label>
-              <input type="text" id="ex-tab3-label" value="A Reason for Hope" />
+              <input type="text" id="ex-tab3-label" value="A Reason for Hope">
             </div>
             <div class="field">
               <label>Excerpt Text</label>
@@ -512,7 +499,7 @@
             </div>
             <div class="field">
               <label>Page Citation</label>
-              <input type="text" id="ex-tab3-page" placeholder="e.g. Page 198" />
+              <input type="text" id="ex-tab3-page" placeholder="e.g. Page 198">
             </div>
           </div>
 
@@ -531,7 +518,7 @@
           </div>
           <div class="field">
             <label>Topic / Category Name</label>
-            <input type="text" id="topic-name" placeholder="e.g. The Future of Local TV News" />
+            <input type="text" id="topic-name" placeholder="e.g. The Future of Local TV News">
           </div>
           <div class="field-row">
             <div class="field">
@@ -617,10 +604,10 @@
           </div>
 
           <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
-            <button class="btn btn-outline btn-sm mod-filter active" onclick="filterMod('all',this)">All Posts (12)</button>
-            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod('flagged',this)">🚩 Flagged (2)</button>
-            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod('pinned',this)">📌 Pinned (1)</button>
-            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod('hidden',this)">👁 Hidden (1)</button>
+            <button class="btn btn-outline btn-sm mod-filter active" onclick="filterMod(&#39;all&#39;,this)">All Posts (12)</button>
+            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod(&#39;flagged&#39;,this)">🚩 Flagged (2)</button>
+            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod(&#39;pinned&#39;,this)">📌 Pinned (1)</button>
+            <button class="btn btn-outline btn-sm mod-filter" onclick="filterMod(&#39;hidden&#39;,this)">👁 Hidden (1)</button>
           </div>
 
           <div id="mod-list">
@@ -642,52 +629,15 @@
           </div>
 
           <div id="question-list">
-            <div class="discussion-item" data-featured="false">
-              <div class="discussion-meta">
-                <span class="discussion-author">Margaret T.</span>
-                <span class="discussion-date">Mar 1, 2026</span>
-              </div>
-              <div class="discussion-title">"What gave you the courage to publish the Fort Bragg story?"</div>
-              <div class="discussion-actions">
-                <button class="btn btn-gold btn-sm" onclick="featureQuestion(this)">⭐ Feature on Site</button>
-                <button class="btn btn-outline btn-sm" onclick="replyQuestion(this)">Reply via Email</button>
-                <button class="btn btn-danger btn-sm" onclick="deleteQuestion(this)">Delete</button>
-              </div>
-            </div>
-
-            <div class="discussion-item" data-featured="true" style="border-left:4px solid var(--gold);">
-              <div class="discussion-meta">
-                <span class="discussion-author">David K.</span>
-                <span class="discussion-date">Mar 2, 2026</span>
-                <span class="badge badge-pin">⭐ Featured</span>
-              </div>
-              <div class="discussion-title">"How do small communities fund local journalism without corporate support?"</div>
-              <div class="discussion-actions">
-                <button class="btn btn-outline btn-sm" onclick="unfeatureQuestion(this)">Remove from Featured</button>
-                <button class="btn btn-outline btn-sm" onclick="replyQuestion(this)">Reply via Email</button>
-                <button class="btn btn-danger btn-sm" onclick="deleteQuestion(this)">Delete</button>
-              </div>
-            </div>
-
-            <div class="discussion-item" data-featured="false">
-              <div class="discussion-meta">
-                <span class="discussion-author">Sarah M.</span>
-                <span class="discussion-date">Mar 3, 2026</span>
-                <span class="badge badge-new">New</span>
-              </div>
-              <div class="discussion-title">"Do you think AI will replace local reporters, or can it help them?"</div>
-              <div class="discussion-actions">
-                <button class="btn btn-gold btn-sm" onclick="featureQuestion(this)">⭐ Feature on Site</button>
-                <button class="btn btn-outline btn-sm" onclick="replyQuestion(this)">Reply via Email</button>
-                <button class="btn btn-danger btn-sm" onclick="deleteQuestion(this)">Delete</button>
-              </div>
+            <div id="question-empty" style="font-size:13px;color:var(--muted);padding:24px 0;font-style:italic;text-align:center;">
+              No reader questions yet. Questions submitted via the landing page will appear here.
             </div>
           </div>
 
           <div style="margin-top:24px;padding:20px;background:var(--cream);border:1px solid var(--border);">
             <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Currently Featured on Landing Page</div>
             <div id="featured-preview" style="font-size:13px;color:var(--muted);font-style:italic;">
-              "How do small communities fund local journalism without corporate support?" — David K.
+              No question currently featured.
             </div>
           </div>
         </div>
@@ -701,15 +651,15 @@
           </div>
           <div class="field">
             <label>Author Contact Email</label>
-            <input type="email" id="set-email" value="rick@rickthames.com" />
+            <input type="email" id="set-email" value="rick@rickthames.com">
           </div>
           <div class="field">
             <label>Amazon Buy Link</label>
-            <input type="text" id="set-amazon" value="https://a.co/d/0eMvFtaJ" />
+            <input type="text" id="set-amazon" value="https://a.co/d/0eMvFtaJ">
           </div>
           <div class="field">
             <label>Barnes &amp; Noble Buy Link</label>
-            <input type="text" id="set-bn" value="https://www.barnesandnoble.com/w/why-local-news-rick-thames/1148285737" />
+            <input type="text" id="set-bn" value="https://www.barnesandnoble.com/w/why-local-news-rick-thames/1148285737">
           </div>
           <div class="field">
             <label>Book Signings Toggle (on landing page)</label>
@@ -728,11 +678,11 @@
           </div>
           <div class="field">
             <label>Admin Password (change)</label>
-            <input type="password" id="set-pw-new" placeholder="New password" />
+            <input type="password" id="set-pw-new" placeholder="New password">
           </div>
           <div class="field">
             <label>Confirm New Password</label>
-            <input type="password" id="set-pw-confirm" placeholder="Confirm new password" />
+            <input type="password" id="set-pw-confirm" placeholder="Confirm new password">
           </div>
           <button class="btn btn-primary" onclick="saveSettings()">💾 Save Settings</button>
         </div>
@@ -848,6 +798,20 @@ async function loadData() {
 }
 
 /* ─── SIGNINGS ──────────────────────────────────── */
+async function testBlobConnection() {
+  const status = document.getElementById('blob-status');
+  status.textContent = 'Testing...';
+  try {
+    const res = await fetch(`${API}?key=signings`);
+    const data = await res.json();
+    status.textContent = `✅ Connected! Found ${Array.isArray(data) ? data.length : 0} signing(s) in live database.`;
+    status.style.color = 'var(--success)';
+  } catch(e) {
+    status.textContent = `❌ Connection failed: ${e.message}`;
+    status.style.color = 'var(--danger)';
+  }
+}
+
 async function addSigning() {
   const date  = document.getElementById('sign-date').value;
   const time  = document.getElementById('sign-time').value;
@@ -858,10 +822,11 @@ async function addSigning() {
   if (!date || !venue || !city) { showToast('Please fill in Date, Venue, and City.'); return; }
   signings.push({ date, time, venue, city, url, notes });
   signings.sort((a,b) => a.date.localeCompare(b.date));
-  saveData();
+  showToast('Saving to live site...');
+  await saveData();
   renderSignings();
   ['sign-date','sign-time','sign-venue','sign-city','sign-url','sign-notes'].forEach(id => document.getElementById(id).value = '');
-  showToast('Signing event added!');
+  showToast('✅ Signing saved to live site!');
 }
 
 async function removeSigning(idx) {
@@ -1077,5 +1042,6 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2800);
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
